@@ -1,0 +1,42 @@
+/* Full_adder of 1 bit
+	by richard 05/04/2024
+*/
+ `timescale 10ns/100ps //escala de tempo/precisao de tempo(zoom)
+
+module  full_adder_tb;
+  
+	reg a_tb, b_tb, ci_tb; //registrar entradas
+	wire s_tb, co_tb; //Ler as saidas pelos fios
+
+full_adder U3(
+	.a_i(a_tb), //receber os valores do testBench
+	.b_i(b_tb),
+	.c_i(ci_tb),
+	.s_o(s_tb), //entregar os valores os testBench
+	.c_o(co_tb)  
+);
+
+initial
+begin
+  a_tb = 0;
+  b_tb = 0;
+  ci_tb = 0;
+  #5;//delay 5
+  a_tb = 0;
+  b_tb = 1;
+  ci_tb = 1;
+  #5;//delay 5
+  a_tb = 1;
+  b_tb = 0;
+  ci_tb = 0;
+  #5;//delay 5
+  a_tb = 1;
+  b_tb = 1;
+  ci_tb = 1;
+  #20;//delay 20
+  $stop;
+end
+
+always @(a_tb or b_tb) $display("a=%b ",a_tb, "b=%b ",b_tb, "s=%b ",s_tb,"c=%b ", ci_tb);
+
+endmodule

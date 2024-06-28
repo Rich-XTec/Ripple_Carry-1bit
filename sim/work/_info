@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+vfull_adder
+!i10b 1
+V515TXIQ;VS>?A@==b97NS1
+r1
+!s85 0
+31
+!s100 o__V2eJZPcP[1m=mb3_4P3
+IJfe;2U6:QOQF_f01B7GVZ1
+Z0 dC:\Users\Jacare\Documents\HDL\lab3_RippleCarry\sim
+w1712324443
+8C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/full_adder.v
+FC:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/full_adder.v
+L0 5
+Z1 OV;L;10.1d;51
+!s90 -reportprogress|300|-work|work|C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/full_adder.v|
+Z2 o-work work -O0
+!s108 1712926075.362000
+!s107 C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/full_adder.v|
+!s101 -O0
+vhalf_adder
+!i10b 1
+VS9hBZKALRTdilXkcEfc=W2
+r1
+!s85 0
+31
+!s100 bIQRKc`dg5f:RTnC1@NnD1
+IWlNg3525EN?<B:YBMY=eL3
+Z3 dC:\Users\Jacare\Documents\HDL\lab3_RippleCarry\sim
+w1712323873
+8C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/half_adder.v
+FC:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/half_adder.v
+L0 5
+R1
+!s90 -reportprogress|300|-work|work|C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/half_adder.v|
+R2
+!s108 1712926075.503000
+!s107 C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/half_adder.v|
+!s101 -O0
+vripple_carry
+!i10b 1
+VQQEf<1;U1;fQI=Z`[EbR<2
+r1
+!s85 0
+31
+!s100 hV<zRb48eT;Zl:6Hm37jj3
+I]3f7Q^`6PCQ4CQAZS_BkI2
+R3
+w1712329325
+8C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry.v
+FC:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry.v
+L0 5
+R1
+!s90 -reportprogress|300|-work|work|C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry.v|
+R2
+!s108 1712926075.659000
+!s107 C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry.v|
+!s101 -O0
+vripple_carry_tb
+!i10b 1
+VD;4f6OmQo8M`d><8L8;N_2
+r1
+!s85 0
+31
+!s100 dmGSb6j`iNZFaFm5T4?B_2
+Innhe_PVSd7c0KT]DU^GJQ1
+R3
+w1712925648
+8C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry_tb.v
+FC:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry_tb.v
+L0 6
+R1
+!s90 -reportprogress|300|-work|work|C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry_tb.v|
+R2
+!s108 1712926075.800000
+!s107 C:/Users/Jacare/Documents/HDL/lab3_RippleCarry/src/ripple_carry_tb.v|
+!s101 -O0

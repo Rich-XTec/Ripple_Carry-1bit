@@ -1,0 +1,121 @@
+|ripple_carry
+a_i[0] => a_i[0].IN1
+a_i[1] => a_i[1].IN1
+a_i[2] => a_i[2].IN1
+a_i[3] => a_i[3].IN1
+b_i[0] => b_i[0].IN1
+b_i[1] => b_i[1].IN1
+b_i[2] => b_i[2].IN1
+b_i[3] => b_i[3].IN1
+c_i => c_i.IN1
+s_o[0] <= full_adder:U0.s_o
+s_o[1] <= full_adder:U1.s_o
+s_o[2] <= full_adder:U2.s_o
+s_o[3] <= full_adder:U3.s_o
+c_o <= full_adder:U3.c_o
+
+
+|ripple_carry|full_adder:U0
+a_i => a_i.IN1
+b_i => b_i.IN1
+c_i => c_i.IN1
+s_o <= half_adder:U1.s_o
+c_o <= U2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U0|half_adder:U0
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U0|half_adder:U1
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U1
+a_i => a_i.IN1
+b_i => b_i.IN1
+c_i => c_i.IN1
+s_o <= half_adder:U1.s_o
+c_o <= U2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U1|half_adder:U0
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U1|half_adder:U1
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U2
+a_i => a_i.IN1
+b_i => b_i.IN1
+c_i => c_i.IN1
+s_o <= half_adder:U1.s_o
+c_o <= U2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U2|half_adder:U0
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U2|half_adder:U1
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U3
+a_i => a_i.IN1
+b_i => b_i.IN1
+c_i => c_i.IN1
+s_o <= half_adder:U1.s_o
+c_o <= U2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U3|half_adder:U0
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry|full_adder:U3|half_adder:U1
+a_i => comb.IN0
+a_i => comb.IN0
+b_i => comb.IN1
+b_i => comb.IN1
+s_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c_o <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
